@@ -68,13 +68,14 @@ The following machine learning models were implemented:
 
 ## Observations
 
-- Logistic Regression produced the best overall performance on this dataset with an accuracy of 96.5%.
-- Random Forest also performed well and gave consistent results across all evaluation metrics.
-- Decision Tree achieved reasonable performance but was less accurate than Logistic Regression and Random Forest.
-- Gaussian Naive Bayes provided acceptable performance with relatively simple assumptions.
-- K-Nearest Neighbors produced the lowest accuracy on the current train-test split and could be improved through hyperparameter tuning.
-
-Logistic Regression was selected as the best model for this dataset based on the evaluation metrics.
+| ML Model | Observation |
+|----------|-------------|
+| Logistic Regression | Achieved the highest overall performance with **96.5% accuracy** and the best values for Precision, Recall, F1 Score, MCC, and AUC. It was the most reliable model for this dataset. |
+| Decision Tree | Delivered moderate performance (83.0% accuracy). It was able to classify the data reasonably well but was less accurate than Logistic Regression and Random Forest. |
+| K-Nearest Neighbors (KNN) | Achieved the lowest performance (50.0% accuracy) on the current train-test split. The model may benefit from hyperparameter tuning and further optimization. |
+| Gaussian Naive Bayes | Produced acceptable performance (81.0% accuracy) while maintaining a simple and computationally efficient model. |
+| Random Forest (Ensemble) | Achieved strong overall performance (88.0% accuracy) and ranked second among all models. The ensemble approach improved classification compared to a single Decision Tree. |
+| **Overall Winner** | **Logistic Regression** achieved the best overall performance with an accuracy of **96.5%**, AUC of **0.9987**, and the highest MCC (**0.9534**). Based on these evaluation metrics, it was selected as the best model for this dataset. |
 
 
 ## Running the Project
